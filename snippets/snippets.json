@@ -23,5 +23,27 @@
       "boot.run();\n"
     ],
     "description": "Onix Boot file."
+  },
+  "Onix Module": {
+    "prefix": "onix-module",
+    "body": [
+      "import { Module } from '@onixjs/core';",
+      "import { ${1:Todo}Component } from './${2:Todo}.component';",
+      "import { ${1:Todo}Model } from './${2:Todo}.model';",
+      "import { ${1:Todo}Service } from './${2:Todo}.service';\n",
+      "@Module({",
+      "\tmodels: [${1:Todo}Model],",
+      "\tservices: [${1:Todo}Service],",
+      "\trenderes: [],",
+      "\tcomponents: [${1:Todo}Component],",
+      "\tlifecycle: async(appp, metadata, method): Promise<any> => {",
+      "\t\t// before call",
+      "\t\tconst result = await method();",
+      "\t\t// before call",
+      "\t},",
+      "})",
+      "export class ${1:Todo}Module {}\n"
+    ],
+    "description": "Onix Boot file."
   }
 }
