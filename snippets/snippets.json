@@ -63,5 +63,21 @@
       "}\n"
     ],
     "description": "Onix Model."
+  },
+  "Onix Datasource": {
+    "prefix": "onix-datasource",
+    "body": [
+      "import { IDataSource, DataSource, Constructor, OnixMessage } from '@onixjs/core';\n",
+      "@DataSource()",
+      "export class ${3}Datasource {\n",
+      "\tconnect() {",
+      "\t}\n",
+      "\tdisconnect() {",
+      "\t}\n",
+      "\tregister(Class: Constructor, model: OnixMessage, schema: Schema): any {",
+      "\t}\n",
+      "}\n"
+    ],
+    "description": "Onix Datasource."
   }
 }
