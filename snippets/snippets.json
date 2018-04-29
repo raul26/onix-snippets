@@ -44,6 +44,24 @@
       "})",
       "export class ${1:Todo}Module {}\n"
     ],
-    "description": "Onix Boot file."
+    "description": "Onix Module."
+  },
+  "Onix Model": {
+    "prefix": "onix-model",
+    "body": [
+      "import { Model, IModel, Property } from '@onixjs/core';",
+      "import { ${1:Mongoose}Datasource } from './${2:mongoose}.datasource';\n",
+      "@Model({",
+      "\tdatasource: [${1:Mongoose}Datasource],",
+      "})",
+      "export class ${3:Todo}Model {\n",
+      "\t_id?: string\n",
+      "\t@Property({",
+      "\t\ttype: String",
+      "\t\trequired: true",
+      "\t}) text: String;",
+      "}\n"
+    ],
+    "description": "Onix Model."
   }
 }
