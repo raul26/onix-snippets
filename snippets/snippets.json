@@ -57,7 +57,7 @@
       "export class ${3:Todo}Model {\n",
       "\t_id?: string\n",
       "\t@Property({",
-      "\t\ttype: String",
+      "\t\ttype: String,",
       "\t\trequired: true",
       "\t}) text: String;",
       "}\n"
