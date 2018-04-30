@@ -1,6 +1,6 @@
 {
-  "Onix Index": {
-    "prefix": "onix-application",
+  "Onix Microservice": {
+    "prefix": "onix-microservice",
     "body": [
       "import { Application, MicroService } from '@onixjs/core';\n",
       "@MicroService({",
@@ -8,7 +8,20 @@
       "\tport: ${3:8080},",
       "\tmodules: []",
       "})",
-      "export class ${1:Todo}App extends Application {}"
+      "export class ${1}App extends Application {}"
+    ],
+    "description": "Onix App Class"
+  },
+  "Onix SOA": {
+    "prefix": "onix-soa",
+    "body": [
+      "import { Application, SOAService } from '@onixjs/core';\n",
+      "@SOAService({",
+      "\thost: '${2:127.0.0.1}',",
+      "\tport: ${3:8080},",
+      "\tmodules: []",
+      "})",
+      "export class ${1}App extends Application {}"
     ],
     "description": "Onix App Class"
   },
@@ -27,22 +40,19 @@
   "Onix Module": {
     "prefix": "onix-module",
     "body": [
-      "import { Module } from '@onixjs/core';",
-      "import { ${1:Todo}Component } from './${2:Todo}.component';",
-      "import { ${1:Todo}Model } from './${2:Todo}.model';",
-      "import { ${1:Todo}Service } from './${2:Todo}.service';\n",
+      "import { Module } from '@onixjs/core';\n",
       "@Module({",
-      "\tmodels: [${1:Todo}Model],",
-      "\tservices: [${1:Todo}Service],",
+      "\tmodels: [],",
+      "\tservices: [],",
       "\trenderes: [],",
-      "\tcomponents: [${1:Todo}Component],",
+      "\tcomponents: [],",
       "\tlifecycle: async(appp, metadata, method): Promise<any> => {",
       "\t\t// before call",
       "\t\tconst result = await method();",
       "\t\t// before call",
       "\t},",
       "})",
-      "export class ${1:Todo}Module {}\n"
+      "export class ${1}Module {}\n"
     ],
     "description": "Onix Module."
   },
@@ -50,11 +60,10 @@
     "prefix": "onix-model",
     "body": [
       "import { Model, IModel, Property } from '@onixjs/core';",
-      "import { ${1:Mongoose}Datasource } from './${2:mongoose}.datasource';\n",
       "@Model({",
-      "\tdatasource: [${1:Mongoose}Datasource],",
+      "\tdatasource: [${1}],",
       "})",
-      "export class ${3:Todo}Model {\n",
+      "export class ${3}Model {\n",
       "\t_id?: string\n",
       "\t@Property({",
       "\t\ttype: String,",
@@ -69,15 +78,39 @@
     "body": [
       "import { IDataSource, DataSource, Constructor, OnixMessage } from '@onixjs/core';\n",
       "@DataSource()",
-      "export class ${3}Datasource {\n",
+      "export class ${1}Datasource {\n",
       "\tconnect() {",
       "\t}\n",
       "\tdisconnect() {",
       "\t}\n",
-      "\tregister(Class: Constructor, model: OnixMessage, schema: Schema): any {",
+      "\tregister(Class: Constructor, model: OnixMessage, schema: any): any {",
       "\t}\n",
       "}\n"
     ],
     "description": "Onix Datasource."
+  },
+  "Onix Service": {
+    "prefix": "onix-service",
+    "body": [
+      "import { Service } from '@onixjs/core';\n",
+      "@Service()",
+      "export class ${1}Service {\n",
+      "}\n"
+    ],
+    "description": "Onix Service."
+  },
+  "Onix Component": {
+    "prefix": "onix-component",
+    "body": [
+      "import { IComponent, Component } from '@onixjs/core';\n",
+      "@Component()",
+      "export class ${1}Component implements IComponent {\n",
+      "\tinit() {",
+      "\t}\n",
+      "\tdestroy() {",
+      "\t}\n",
+      "}\n"
+    ],
+    "description": "Onix Component."
   }
 }
