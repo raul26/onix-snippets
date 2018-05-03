@@ -44,7 +44,7 @@
       "@Module({",
       "\tmodels: [],",
       "\tservices: [],",
-      "\trenderes: [],",
+      "\trenderers: [],",
       "\tcomponents: [],",
       "\tlifecycle: async(appp, metadata, method): Promise<any> => {",
       "\t\t// before call",
