@@ -17,7 +17,7 @@
     "icon": "misc/icon",
     "repository": {
         "type": "git",
-        "url": "https://github.com/onixjs/vcode.git"
+        "url": "https://github.com/raul26/onix-snippets.git"
     },
     "galleryBanner": {
         "color": "#C80000",
