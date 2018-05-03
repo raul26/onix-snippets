@@ -2,7 +2,7 @@
     "name": "onix-snippets",
     "displayName": "onix-snippets",
     "description": "Snippets to get started faster with onix js",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "rvargas26",
     "engines": {
         "vscode": "^1.21.0"
