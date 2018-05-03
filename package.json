@@ -2,7 +2,7 @@
     "name": "onix-snippets",
     "displayName": "onix-snippets",
     "description": "Snippets to get started faster with onix js",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "rvargas26",
     "engines": {
         "vscode": "^1.21.0"
@@ -14,7 +14,7 @@
         "OnixJs",
         "Typescript"
     ],
-    "icon": "misc/icon",
+    "icon": "misc/icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/raul26/onix-snippets.git"
