@@ -3,7 +3,7 @@
 This extension is created for OnixJS framework users, allowing them create Onix application faster.
 ## Features
 
-This is the list of snippets available:
+This is the list of snippets available in Typescript files:
 
 - onix-microservice
 - onix-soa
@@ -14,7 +14,7 @@ This is the list of snippets available:
 - onix-component
 
 > For more information please visit the following links:
-> - [Pagina oficial de OnixJS](https://onixjs.io/)
+> - [OnixJS Oficial Page](https://onixjs.io/)
 > - [Github Wiki](https://github.com/onixjs/core/wiki)
 > - [Github Repo](https://github.com/onixjs/core)
 
