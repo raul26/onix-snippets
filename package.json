@@ -2,7 +2,7 @@
     "name": "onixjs-snippets",
     "displayName": "onixjs-snippets",
     "description": "Snippets to get started faster with onix js",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "rvargas26",
     "engines": {
         "vscode": "^1.21.0"
@@ -17,7 +17,7 @@
     "icon": "misc/icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/raul26/onix-snippets.git"
+        "url": "https://github.com/onixjs/vcode.git"
     },
     "galleryBanner": {
         "color": "#28233D",
